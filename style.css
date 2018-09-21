@@ -5,13 +5,11 @@ html
 
 body
 {
-    background: blue;
-    background: -moz-linear-gradient(top, blue 0%, black 100%);
-    background: -webkit-linear-gradient(top, blue 0%,black 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, blue); color-stop(100%, black));
-    background: linear-gradient(to bottom, blue 0%,black 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='blue', endColorstr='black',GradientType=0 );
-    background-repeat: no-repeat;
+    background: -moz-linear-gradient(top, transparent 0%, black 100%), url('jeans.jpg');
+    background: -webkit-linear-gradient(top, transparent 0%,black 100%), url('jeans.jpg');
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, transparent); color-stop(100%, black)), url('jeans.jpg');
+    background: linear-gradient(to bottom, transparent 0%, black 100%), url('jeans.jpg');
+    background-repeat: repeat-x;
     background-attachment: fixed;
     overflow: hidden;
 }
